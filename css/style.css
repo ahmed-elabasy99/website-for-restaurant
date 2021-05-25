@@ -1,0 +1,453 @@
+
+@import url(https://fonts.googleapis.com/css?family=Luckiest+Guy);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	background:rgb(34, 33, 33); 
+	font-family: arial, verdana, tahoma;
+   
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height :100vh;
+    display: flex;
+    justify-content: space-between;
+    background: url("../img/logo.jpg") no-repeat center center;
+    background-size: cover; 
+    padding: 100px; 
+
+
+}
+nav {
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+padding: 50px 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+nav .logo {
+max-width: 80px;
+border-radius: 100%;
+
+}
+nav UL{
+    display: flex;
+    list-style:none;
+}
+nav UL li a {
+    color: #cda45e;
+    font-weight: bold;
+    font-size: 32px;
+    margin-left: 25px;
+    text-decoration: none;
+}
+nav UL li a:hover {
+    background-color:#e75b1e;
+    border: radius 5px;
+}
+.content{
+    position: relative;
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .text {
+    position: relative;
+    max-width: 600px;
+    max-height: 500px;
+}
+.content .text h2 {
+    /* color:rgba(37, 155, 76, 0.911); */
+    color:#158b50;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    transition: 0.5s ease;
+    padding: 10px;
+    margin: 5px;
+
+    
+}
+.content .text h2:hover {
+    font-size: 50px;
+    box-shadow: 3px 3px 20px #e75b1e;
+    padding: 10px;
+}
+
+.content .text h2 span {
+
+    color:aliceblue;
+    font-size: 20px;
+}
+
+/* .content .text .h2 span:hover {
+    font-size: 40px;
+    box-shadow: 3px 3px 20px #5a9183;
+} */
+/* الكلام بتاع المنيو */
+
+.content .text p{
+    margin:  10px 0 ;
+    color:#cda45e;
+    font-size: 24px;
+    text-align: justify;
+    font-weight: bold;
+}
+.content .text a{
+    margin-top: 20px;
+    padding: 10px 20px ;
+    color: black; 
+    background: rgb(194, 139, 20);
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none; 
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.content .text a:hover{
+    box-shadow: 1px 1px 15px;
+    font-size: 20px;
+}
+
+
+.content .imgbox img {
+    max-width: 300px;
+    max-height: 300px;  
+position: absolute;
+top: 50%;
+left: 80%;
+/* right: 0px ; */
+border-radius: 100%;
+  
+}
+.intc {
+    position: absolute;
+    right: 400px;
+    top: 40%;
+   
+    
+}
+.intc li{
+    list-style: none;
+    margin: 0 5px;
+    cursor: pointer;
+    
+}
+.intc li:hover{
+    transform: translateX(-20px);
+}
+.intc li img{
+    max-width: 100px;
+    border-radius: 100%;
+}
+#ourmaps{height:360px;}
+
+
+.container   {
+    padding: 20px 0;
+    overflow: hidden;
+    /* background-color:#444442; */
+  background-color: rgb(34, 33, 33);
+}
+    
+  
+  
+ 
+  .section-title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 4px 10px;
+  }
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #cda45e;
+  }
+.accordian {
+    
+
+	width: 900px; height:90%;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+
+.accordian ul {
+	width: 2000px;
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	
+}
+
+
+.accordian ul:hover li {width: 40px;}
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/* 
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+width: 640px;	 */
+/* 
+} */
+/* .image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+} */
+
+.top0{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    opacity: .3;
+    position: fixed;
+    bottom: 55px;
+    right: 25px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(179, 27, 27);
+    z-index: 1000;
+    transition: opacity .5s, background-color .5s;
+    -moz-transition: opacity .5s, background-color .5s;
+    -webkit-transition: opacity .5s, background-color .5s;
+}
+
+.top0:hover {
+    background: #e75b1e;
+    opacity: 1;
+
+}
+.top0 i {
+    font-size: 13px;
+    position: absolute;
+    opacity: 1;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+.site-footer {
+    margin-top: 100px; /* Remove */
+      position: relative;
+      background-color:#1A1F24;
+      width: 100%;	
+      bottom: 0; 
+  }
+  
+  .site-footer .container {
+      max-width: 85%;
+      margin: 0 auto;
+      position: relative;
+     
+      overflow: hidden;
+      padding-top: 40px;
+      background-color:#1A1F24;
+  }
+  
+  .site-footer .container h1 {
+      font-size: 40px;
+  }
+  
+  .site-footer .container h2 {
+      font-size: 40px;
+      float: right;
+  }
+  
+  .site-footer .grid-container a {
+      color: #A2845C;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 16.25px;
+  }
+  
+  .site-footer .grid-item {
+      padding: 10px;
+      color: #A2845C;
+  }
+  
+  
+  .site-footer .grid-container .inner-grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      text-align: left;
+  }
+  
+  .site-footer .container hr { 
+      display: block; 
+      height: 1px;
+      border: 0; border-top: 1px solid #A2845C;
+      margin: 1px; 
+      padding: 0; 
+  }
+  
+  .site-footer .container p {
+      font-size: 18px;
+      text-align: center;
+      color:#A2845C;
+      font-weight: 500;
+  }
+  
+  .site-footer .container .logo-img {
+      width: 140px;
+      height: 140px;
+      cursor: pointer;
+      border-radius: 100%;
+  }
+  
+  .site-footer .grid-container .grid-item .social-buttons {
+      padding-top: 20px;
+  }
+  
+  .site-footer .grid-container .grid-item .social-buttons a {
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      color: #1A1F24;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 0 8px;
+  }
+  
+  
+  .site-footer .grid-container .grid-item .social-buttons a i{
+      transition: 0.3s ease-in;
+  }
+  
+  .site-footer .grid-container .grid-item .social-buttons a:hover i {
+      background: linear-gradient(45deg,#A2845C,#A2845C);
+      
+      -webkit-text-fill-color: transparent;
+      transform: scale(1.5);
+  }
+  
+  .circle-icon {
+      background: #A2845C;
+      padding:12px;
+      border-radius: 50%;
+  }
+  
+  
+  
+  /*------------------------------------------------------------------
+  [ Screen Sizes] */
+  
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+  
+      .site-footer {
+          height: 620px;
+          bottom: 0; 
+      }
+  
+      .site-footer .grid-container {
+          display: grid;
+          grid-template-columns: 400px;
+      }
+  
+      .site-footer .grid-container .inner-grid-container {
+          display: grid;
+          grid-template-columns: auto auto ;
+          text-align: left;
+      }
+  
+  
+  }
+  
+  /*========================================================*/
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  
+      .site-footer {
+          height: 260px;
+          bottom: 0;
+      }
+  
+      .site-footer .grid-container {
+          display: grid;
+          grid-template-columns: 350px auto 350px;
+      }
+  
+      .site-footer .grid-container .inner-grid-container{
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          text-align: left;
+      }
+  
+  }
+  
+
+
